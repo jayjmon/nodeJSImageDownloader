@@ -26,7 +26,7 @@ const imageDownloader = () =>{
 			console.log('Saved to', filename )  // saved to /path/to/dest/image.jpg
 		  })
 		  .catch((err) => console.error(err))
-	  recipes.Data[i].image = "https://ketonebee.com/" + i.replaceAll(" ", "-") + "."+getFileExtension(options.url);
+	  recipes.Data[i].image = "https://ketonebee.com/img/" + i.replaceAll(" ", "-") + "."+getFileExtension(options.url);
 	 }
 	
 	console.log(recipes)
