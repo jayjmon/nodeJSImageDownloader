@@ -18,7 +18,7 @@ const options = {
     image = i.image
 	console.log(i, recipes.Data[i].image[0])
 	options.url = recipes.Data[i].image[0];
-	options.dest = './img/' + i.replace(" ", "-") + "."+getFileExtension(options.url);
+	options.dest = './img/' + i.replaceAll(" ", "-") + "."+getFileExtension(options.url);
 download.image(options)
   .then(({ filename  }) => {
     console.log('Saved to', filename )  // saved to /path/to/dest/image.jpg
